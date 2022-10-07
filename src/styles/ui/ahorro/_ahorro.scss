@@ -1,0 +1,39 @@
+@import "../../base/variables";
+@import "../../base/mixins";
+
+.ahorro {
+    padding: 3rem 0;
+    margin: 3rem 0;
+    border: solid 2px $secundario;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5rem;
+    
+    @include tablet { 
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+     }
+
+    &__botones {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+
+        @include tablet { 
+            flex-direction:row;
+         }
+
+        .btn-editar {
+            @include boton($primario, $blanco);
+            border-radius: 1rem
+        }
+        
+        .btn-eliminar {
+            @include boton($danger, $blanco);
+            border-radius: 1rem
+        }
+    }
+}

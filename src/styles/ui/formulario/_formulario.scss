@@ -1,0 +1,44 @@
+@import "../../base/variables";
+@import "../../base/mixins";
+
+.formulario {
+
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__campos {
+        width: 50%;
+    }
+
+    &__campo {
+        margin-top: 2rem;
+    }
+
+
+    &__label {
+        color: $blanco;
+        font-size: 2rem;
+        display: block;
+    }
+
+    &__input {
+        width: 100%;
+        margin-top: 1rem;
+        padding: 1rem 2rem;
+        text-align: center;
+        border: none;
+        border-radius: 2rem;
+    }
+
+    &__btn {
+        margin-top: 2rem;
+        border-radius: 2rem;
+        @include boton($secundario, $blanco);
+
+        @include tablet { 
+            width: 100%;
+         }
+    }
+}

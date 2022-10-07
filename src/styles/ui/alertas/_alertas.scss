@@ -1,0 +1,15 @@
+@import "../../base/variables";
+@import "../../base/mixins";
+
+
+.alerta {
+    margin-top: 2rem;
+    padding: 2rem 3rem;
+    background-color: $danger;
+}
+
+.error {
+    color: $blanco;
+    text-align: center;
+    font-weight: bold;
+}
